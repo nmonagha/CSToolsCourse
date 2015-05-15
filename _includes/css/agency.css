@@ -2,16 +2,12 @@
  * Start Bootstrap - Agency Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- *
- * site.color.primary = steelblue
- * site.color.secondary = #2864aa
- * site.color.secondary-dark = #303030
  */
 
 body {
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #303030;
+    color: #{{ site.color.secondary-dark }};
 }
 
 .text-muted {
@@ -19,7 +15,7 @@ body {
 }
 
 .text-primary {
-    color: steelblue;
+    color: #{{ site.color.primary }};
 }
 
 p {
@@ -40,14 +36,14 @@ a.active {
 }
 
 a {
-    color: steelblue;
+    color: #{{ site.color.primary }};
 }
 
 a:hover,
 a:focus,
 a:active,
 a.active {
-    color: #2864aa;
+    color: #{{ site.color.secondary }};
 }
 
 h1,
@@ -74,12 +70,12 @@ h6 {
 }
 
 .btn-primary {
-    border-color: steelblue;
+    border-color: #{{ site.color.primary }};
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #fff;
-    background-color: steelblue;
+    background-color: #{{ site.color.primary }};
 }
 
 .btn-primary:hover,
@@ -87,9 +83,9 @@ h6 {
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-    border-color: steelblue;
+    border-color: #{{ site.color.primary }};
     color: #fff;
-    background-color: #2864aa;
+    background-color: #{{ site.color.secondary }};
 }
 
 .btn-primary:active,
@@ -113,25 +109,25 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    border-color: steelblue;
-    background-color: steelblue;
+    border-color: #{{ site.color.primary }};
+    background-color: #{{ site.color.primary }};
 }
 
 .btn-primary .badge {
-    color: steelblue;
+    color: #{{ site.color.primary }};
     background-color: #fff;
 }
 
 .btn-xl {
     padding: 20px 40px;
-    border-color: steelblue;
+    border-color: #{{ site.color.primary }};
     border-radius: 3px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #fff;
-    background-color: steelblue;
+    background-color: #{{ site.color.primary }};
 }
 
 .btn-xl:hover,
@@ -139,9 +135,9 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-    border-color: steelblue;
+    border-color: #{{ site.color.primary }};
     color: #fff;
-    background-color: #2864aa;
+    background-color: #{{ site.color.secondary }};
 }
 
 .btn-xl:active,
@@ -165,12 +161,12 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl.disabled.active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
-    border-color: steelblue;
-    background-color: steelblue;
+    border-color: #{{ site.color.primary }};
+    background-color: #{{ site.color.primary }};
 }
 
 .btn-xl .badge {
-    color: steelblue;
+    color: #{{ site.color.primary }};
     background-color: #fff;
 }
 
@@ -183,7 +179,7 @@ fieldset[disabled] .btn-xl.active {
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
     /* font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif; */
     font-weight: 500;
-    /* color: steelblue; */
+    /* color: #{{ site.color.primary }}; */
     color: #FFF;
 }
 
@@ -191,7 +187,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-    color: #2864aa;
+    color: #{{ site.color.secondary }};
 }
 
 .navbar-default .navbar-collapse {
@@ -199,8 +195,8 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-toggle {
-    border-color: steelblue;
-    background-color: steelblue;
+    border-color: #{{ site.color.primary }};
+    background-color: #{{ site.color.primary }};
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -209,7 +205,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: steelblue;
+    background-color: #{{ site.color.primary }};
 }
 
 .navbar-default .nav li a {
@@ -223,19 +219,19 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 0;
-    color: steelblue;
+    color: #{{ site.color.primary }};
 }
 
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
     color: #fff;
-    background-color: steelblue;
+    background-color: #{{ site.color.primary }};
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     color: #fff;
-    background-color: #2864aa;
+    background-color: #{{ site.color.secondary }};
 }
 
 @media(min-width:768px) {
@@ -315,9 +311,6 @@ header .intro-text .intro-heading {
     header .intro-text {
         padding-top: 170px;
         padding-bottom: 200px;
-    }
-    header .intro-text img {
-        width: 100%;
     }
 }
 
@@ -411,7 +404,7 @@ section#apply .apply-undertext {
     -moz-transition: all ease .5s;
     transition: all ease .5s;
     background: rgba(254,209,54,.9); /* Fallback when no plugin support */
-    background: rgba(77, 141, 205, .9);
+    background: rgba({{ site.color.primary | hex_to_rgb | join: ',' }}, .9);
 }
 
 #initiatives .initiative-item .initiative-link .initiative-hover:hover {
@@ -468,11 +461,6 @@ section#apply .apply-undertext {
     }
 }
 
-.team-cont {
-    width: 30%;
-    left: 35%;
-}
-
 /* make the columns 7 */
 #team .col-sm-2 {
   width: 14.285714286% !important;
@@ -487,10 +475,6 @@ section#apply .apply-undertext {
 @media(max-width:767px) {
   #team .col-sm-2 {
     width: 100% !important;
-  }
-  .team-cont {
-    width: 60%;
-    left: 20%;
   }
 }
 
@@ -519,7 +503,6 @@ aside.clients img {
     margin: 50px auto;
 }
 
-/*
 section#contact {
     background-color: #222;
     background-image: url(../img/contact-bg.png);
@@ -529,16 +512,59 @@ section#contact {
 section#contact .section-heading {
     color: #fff;
 }
-*/
 
-footer {
-    background-color: #222;
-    background-image: url(../img/contact-bg.png);
-    background-position: center;
+section#contact .form-group {
+    margin-bottom: 25px;
 }
 
-footer {
-    color: #fff;
+section#contact .form-group input,
+section#contact .form-group textarea {
+    padding: 20px;
+}
+
+section#contact .form-group input.form-control {
+    height: auto;
+}
+
+section#contact .form-group textarea.form-control {
+    height: 245px;
+}
+
+section#contact .form-control:focus {
+    border-color: #{{ site.color.primary }};
+    box-shadow: none;
+}
+
+section#contact::-webkit-input-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact:-moz-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact::-moz-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact:-ms-input-placeholder {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: #bbb;
+}
+
+section#contact .text-danger {
+    color: #e74c3c;
 }
 
 footer {
@@ -583,7 +609,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-    background-color: steelblue;
+    background-color: #{{ site.color.primary }};
 }
 
 .btn:focus,
@@ -666,12 +692,12 @@ ul.social-buttons li a:active {
 
 ::-moz-selection {
     text-shadow: none;
-    background: steelblue;
+    background: #{{ site.color.primary }};
 }
 
 ::selection {
     text-shadow: none;
-    background: steelblue;
+    background: #{{ site.color.primary }};
 }
 
 img::selection {
@@ -683,5 +709,5 @@ img::-moz-selection {
 }
 
 body {
-    webkit-tap-highlight-color: steelblue;
+    webkit-tap-highlight-color: #{{ site.color.primary }};
 }

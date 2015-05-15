@@ -1,0 +1,41 @@
+#url: http://web.ics.purdue.edu/~csusb/
+url: localhost
+#baseurl: http://web.ics.purdue.edu/~csusb/
+baseurl: 
+
+# Site settings
+title: Purdue CS190 Tools
+email: usb@cs.purdue.edu
+description: ""
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary: 4682b4
+  secondary: 2864aa
+  secondary-dark: 303030
+
+# Team names, titles and social links
+people:
+- name: Levi Starrett
+  pic: levi
+  position: Primary Instructor
+  email: lpstarre@purdue.edu
+
+- name: Evan Walsh
+  pic: evan
+  position: Lecturer
+  email: evanw@purdue.edu
+
+- name: Spencer Brown
+  pic: spencer
+  position: Lecturer
+  email: me@spencer.sx
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: 305 N. University St.
+  - line: West Lafayette, IN 47907
+
+# Build settings
+markdown: kramdown
+permalink: pretty
