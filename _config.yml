@@ -1,7 +1,7 @@
-#url: http://web.ics.purdue.edu/~csusb/
-url: localhost
-#baseurl: http://web.ics.purdue.edu/~csusb/
-baseurl: 
+url: http://purdue-csusb.github.io/CSToolsCourse/
+#url: localhost
+baseurl: http://purdue-csusb.github.io/CSToolsCourse/
+#baseurl: 
 
 # Site settings
 title: Purdue CS190 Tools
